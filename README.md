@@ -1,14 +1,46 @@
-🌐 [Português (BR)](README.pt_BR.md) | [Español](README.es.md)
-
 # Soc Ops
 
-Social Bingo game for in-person mixers. Find people who match the questions and get 5 in a row!
+> A social bingo game for in-person mixers, workshops, and team days.
+> Find people who match the prompts, mark your board, and race to 5 in a row.
 
-🎮 **[Play the Game](https://dotnet-presentations.github.io/vscode-github-copilot-agent-lab/)** • 📚 **[View Lab Guide](https://dotnet-presentations.github.io/vscode-github-copilot-agent-lab/docs/)**
+🎮 **[Play the game](https://dotnet-presentations.github.io/vscode-github-copilot-agent-lab/)** • 📚 **[Open the lab guide](https://dotnet-presentations.github.io/vscode-github-copilot-agent-lab/docs/)**
 
 ---
 
-## 📚 Lab Guide
+## Why Soc Ops?
+
+Soc Ops turns awkward introductions into a fast, low-stakes game. It is built with Blazor WebAssembly and .NET 10, so it runs right in the browser and is easy to explore, extend, and remix.
+
+### What you’ll find
+
+- **Instant gameplay** — start a round and jump straight into the board
+- **Persistent state** — the current game saves to local storage
+- **Bingo detection** — lines are tracked automatically as you play
+- **Workshop-ready structure** — the codebase is organized for guided learning
+
+---
+
+## Quick start
+
+### Run locally
+
+```bash
+cd SocOps
+dotnet run
+```
+
+Then open the app at the local address shown in the terminal.
+
+### Build
+
+```bash
+cd SocOps
+dotnet build
+```
+
+---
+
+## Lab guide
 
 | Part | Title |
 |------|-------|
@@ -18,39 +50,22 @@ Social Bingo game for in-person mixers. Find people who match the questions and 
 | [**03**](https://dotnet-presentations.github.io/vscode-github-copilot-agent-lab/docs/step.html?step=03-quiz-master) | Custom Quiz Master |
 | [**04**](https://dotnet-presentations.github.io/vscode-github-copilot-agent-lab/docs/step.html?step=04-multi-agent) | Multi-Agent Development |
 
-> 📝 Lab guides are also available in the [`workshop/`](workshop/) folder for offline reading.
+> The full workshop content is also available offline in [`workshop/`](workshop/).
 
 ---
 
-## Prerequisites
+## Project map
 
-- [.NET 10 SDK](https://dotnet.microsoft.com/download/dotnet/10.0) or higher
+- `SocOps/Components` — reusable UI pieces
+- `SocOps/Pages` — routable screens
+- `SocOps/Models` — game data models
+- `SocOps/Services` — state, rules, and persistence
+- `SocOps/Data` — static question content
 
-## Open in GitHub Codespaces (optional)
+---
 
-After creating your own repo from this template:
+## Requirements
 
-1. Open your repo on GitHub
-2. Click **Code** → **Codespaces** → **Create codespace on main**
-3. Wait for the devcontainer to finish setup
-4. From the repository root, run:
-   ```bash
-   cd SocOps
-   dotnet run
-   ```
-
-## Run
-
-```bash
-cd SocOps
-dotnet run
-```
-
-## Build
-
-```bash
-cd SocOps
-dotnet build
-```
+- [.NET 10 SDK](https://dotnet.microsoft.com/download/dotnet/10.0) or later
 
 Deploys automatically to GitHub Pages on push to `main`.
