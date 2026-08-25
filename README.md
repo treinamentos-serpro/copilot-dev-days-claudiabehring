@@ -1,26 +1,28 @@
-# Soc Ops
+# Soc Ops 🎉
 
 > A social bingo game for in-person mixers, workshops, and team days.
 > Find people who match the prompts, mark your board, and race to 5 in a row.
 
-🎮 **[Play the game](https://dotnet-presentations.github.io/vscode-github-copilot-agent-lab/)** • 📚 **[Open the lab guide](https://dotnet-presentations.github.io/vscode-github-copilot-agent-lab/docs/)**
+🎮 **[Play now](https://dotnet-presentations.github.io/vscode-github-copilot-agent-lab/)** • 📚 **[Start the lab guide](https://dotnet-presentations.github.io/vscode-github-copilot-agent-lab/docs/)** • 🧭 **[Open workshop files](workshop/)**
 
 ---
 
-## Why Soc Ops?
+## Why this project exists
 
-Soc Ops turns awkward introductions into a fast, low-stakes game. It is built with Blazor WebAssembly and .NET 10, so it runs right in the browser and is easy to explore, extend, and remix.
+Soc Ops turns awkward introductions into a fast, low-stakes game that helps people connect.
 
-### What you’ll find
+It is built with **Blazor WebAssembly + .NET 10**, runs fully in the browser, and is intentionally structured for hands-on learning with GitHub Copilot.
 
-- **Instant gameplay** — start a round and jump straight into the board
-- **Persistent state** — the current game saves to local storage
-- **Bingo detection** — lines are tracked automatically as you play
-- **Workshop-ready structure** — the codebase is organized for guided learning
+### Highlights
+
+- ⚡ **Start in seconds** — one click and the board is ready
+- 💾 **Persistent state** — your current game is saved in local storage
+- ✅ **Automatic bingo detection** — completed lines are tracked as you play
+- 🧪 **Workshop-ready architecture** — clear service/component separation for guided exercises
 
 ---
 
-## Quick start
+## Get started in 60 seconds
 
 ### Run locally
 
@@ -29,7 +31,7 @@ cd SocOps
 dotnet run
 ```
 
-Then open the app at the local address shown in the terminal.
+Open the local URL shown in the terminal (typically `http://localhost:5166`).
 
 ### Build
 
@@ -40,9 +42,9 @@ dotnet build
 
 ---
 
-## Lab guide
+## Workshop path
 
-| Part | Title |
+| Part | Focus |
 |------|-------|
 | [**00**](https://dotnet-presentations.github.io/vscode-github-copilot-agent-lab/docs/step.html?step=00-overview) | Overview & Checklist |
 | [**01**](https://dotnet-presentations.github.io/vscode-github-copilot-agent-lab/docs/step.html?step=01-setup) | Setup & Context Engineering |
@@ -50,7 +52,7 @@ dotnet build
 | [**03**](https://dotnet-presentations.github.io/vscode-github-copilot-agent-lab/docs/step.html?step=03-quiz-master) | Custom Quiz Master |
 | [**04**](https://dotnet-presentations.github.io/vscode-github-copilot-agent-lab/docs/step.html?step=04-multi-agent) | Multi-Agent Development |
 
-> The full workshop content is also available offline in [`workshop/`](workshop/).
+Want to work offline? Use the local materials in [`workshop/`](workshop/).
 
 ---
 
@@ -59,8 +61,8 @@ dotnet build
 - `SocOps/Components` — reusable UI pieces
 - `SocOps/Pages` — routable screens
 - `SocOps/Models` — game data models
-- `SocOps/Services` — state, rules, and persistence
-- `SocOps/Data` — static question content
+- `SocOps/Services` — game state, rules, and persistence
+- `SocOps/Data` — static bingo prompt content
 
 ---
 
